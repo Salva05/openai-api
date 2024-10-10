@@ -103,6 +103,7 @@ uvicorn api.app:app --reload
   - Example request body: `{ "prompt": "Hello!" }`
 - **POST /clear_history**: Clears the conversation history.
 
+A showcase performed via the auto-generated API docs endpoint provided by FastAPI (/docs)
 ![alt text](https://github.com/user-attachments/assets/71cb544c-65e0-4ae3-9e5f-44c8d4f0a2b2)
 
 ### 4. Logging
