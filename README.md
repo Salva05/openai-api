@@ -16,7 +16,7 @@ This project is a modular, enterprise-level chatbot application that utilizes Op
 - **config/**
   - `settings.py` - Handles application settings and loads environment variables.
 - **persistence/**
-  - `chat_repository.py` - Provides database operations to persist chat history.
+  - `chat_repository.py` - Provides database operations to persist chat history. (you may want to utilize your own perstistance layer)
 - `main.py` - Command-line interface to interact with the chatbot.
 - **api/**
   - `app.py` - REST API to interact with the chatbot using FastAPI.
@@ -102,6 +102,8 @@ uvicorn api.app:app --reload
 - **POST /chat**: Send a user prompt and receive the chatbot response.
   - Example request body: `{ "prompt": "Hello!" }`
 - **POST /clear_history**: Clears the conversation history.
+
+![alt text](https://github.com/user-attachments/assets/71cb544c-65e0-4ae3-9e5f-44c8d4f0a2b2)
 
 ### 4. Logging
 - **General Logs**: All logs during the lifetime of the program are saved in `chatbot_project.log`.
